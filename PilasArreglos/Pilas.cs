@@ -38,7 +38,7 @@ namespace PilasArreglos
         public string ObtenerDatos()
         {
             StringBuilder datos = new StringBuilder();
-            for (int i = _tope - 1; i >= 0; i--)
+            for (int i = 0; i < _tope; i++)
             {
                 datos.AppendLine(_pila[i]);
             }

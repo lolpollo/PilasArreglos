@@ -4,8 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Esto es un cambio");
+            Pilas pila = new Pilas(10);
+
+            pila.Agregar("A");
+            pila.Agregar("B");
+            pila.Agregar("C");
+
+            Console.WriteLine(pila.ObtenerDatos());
+
+            pila.Agregar("D");
+            Console.WriteLine(pila.ObtenerDatos());
+
+            pila.Eliminar();
+            Console.WriteLine(pila.ObtenerDatos());
+
+            pila.Eliminar();
+            Console.WriteLine(pila.ObtenerDatos());
         }
     }
 }
